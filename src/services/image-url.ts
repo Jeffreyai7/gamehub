@@ -1,7 +1,7 @@
-
+import OptionalPhoto from '../assets/images/dummy-man-570x570.png'
 
 const getCroppedImageUrl = (url: string) => {
-  if(!url) return '';
+  if(!url) return OptionalPhoto;
  const target = "media/";
  const index = url.indexOf(target) + target.length ;
 
