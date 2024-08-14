@@ -21,7 +21,7 @@ function Genres({selectedGenre,  onSelectedGenre}: Props ) {
         <Heading  fontSize={"2xl"} marginBottom={3} >Genres</Heading>
         <List>
             {
-            data.map((genre) => <ListItem key={genre.id} paddingY={"5px"}>
+            data?.results.map((genre) => <ListItem key={genre.id} paddingY={"5px"}>
                 <HStack gap={5} >
                     <Image objectFit={"cover"} boxSize="32px" borderRadius={8} src={getCroppedImageUrl(genre.image_background)} />
                     <Button whiteSpace="wrap" textAlign="left" fontWeight={genre.id === selectedGenre?.id ? "bold" : "normal" } onClick={() => onSelectedGenre(genre)} fontSize={"lg"} variant={"link"} >{genre.name}</Button>

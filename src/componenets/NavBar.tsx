@@ -9,7 +9,7 @@ interface Props {
 
 function NavBar({onSearch} : Props) {
     return (
-        <HStack>
+        <HStack bgColor={"inherit"}>
             <Image src={logo} boxSize="60px" />
             <SearchInput onSearch={onSearch}/>
             <ColorModeSwitch />
