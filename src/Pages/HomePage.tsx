@@ -21,7 +21,7 @@ function HomePage() {
         <Genres />
       </GridItem>
        </Show>
-      <GridItem marginX={4} position={"relative"} area={"main"} marginBottom={5}>
+      <GridItem position={"relative"} area={"main"} marginBottom={5}>
         <div className="fixed">
         <GameHeading/>
         <HStack spacing={5} >
