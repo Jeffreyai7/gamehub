@@ -8,7 +8,7 @@ import SortSelector from "../componenets/SortSelector";
 function HomePage() {
     return (
         <>
-        <Grid templateAreas={{
+      <Grid templateAreas={{
       base: `"main"`,
       lg: `"aside main"`
        }}
@@ -21,13 +21,17 @@ function HomePage() {
         <Genres />
       </GridItem>
        </Show>
-      <GridItem area={"main"} marginBottom={5}>
+      <GridItem marginX={4} position={"relative"} area={"main"} marginBottom={5}>
+        <div className="fixed">
         <GameHeading/>
         <HStack spacing={5} >
         <PlatformSelector />
         <SortSelector/>
         </HStack>
+        <div className="scroll"> 
         <GameGrid/>
+        </div>
+        </div>
       </GridItem>
     </Grid>
         </>

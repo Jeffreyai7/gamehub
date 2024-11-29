@@ -8,3 +8,25 @@ body{
 form{
   width: 100%
 }
+
+/* .fixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+} */
+
+
+.fixed{
+  position: fixed;
+  top: 2rem;
+}
+
+
+.scroll{
+  height: 100vh;
+  overflow-y: auto;
+  scroll-behavior:smooth;
+  scrollbar-width: none
+}

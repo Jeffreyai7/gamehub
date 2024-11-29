@@ -20,9 +20,9 @@ const fetchedGamesCount = data?.pages.reduce((total, page) => total + page.resul
     
 return (
     <>
-    <InfiniteScroll dataLength={fetchedGamesCount} hasMore={!!hasNextPage} next ={() => fetchNextPage()}  loader={<Spinner/> }  >
+<InfiniteScroll dataLength={fetchedGamesCount} hasMore={!!hasNextPage} next ={() => fetchNextPage()}  loader={<Spinner/> }  >
 
-<SimpleGrid columns={{sm: 1, md: 2, lg: 3, xl: 4 }} marginTop={2} spacing={10} >
+<SimpleGrid columns={{sm: 1, md: 2, lg: 3, xl: 4 }} paddingX={4} marginTop={4} spacing={10} >
    {
     isLoading && skeletons.map(skeleton => {
         return  <GameCardContainer key={skeleton} >

@@ -16,8 +16,9 @@ function Genres() {
     if(isLoading) return <Spinner/>
     
     return (
-        <>
-        <Heading  fontSize={"2xl"} marginBottom={3} >Genres</Heading>
+        <div className="fixed">
+        <Heading  fontSize={"2xl"} marginBottom={3} marginTop={10} >Genres</Heading>
+        <div className="scroll">
         <List>
             {
             data?.results.map((genre) => <ListItem key={genre.id} paddingY={"5px"}>
@@ -28,7 +29,8 @@ function Genres() {
             </ListItem> )   
             }
         </List>
-        </>
+        </div>
+        </div>
     );
 }
 

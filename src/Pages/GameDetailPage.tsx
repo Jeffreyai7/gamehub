@@ -15,7 +15,6 @@ function GameDetailPage() {
     <Heading> {game?.name} </Heading>  
     <Text> {game?.description_raw!} </Text>     
     </>
-
     );
 }
 
