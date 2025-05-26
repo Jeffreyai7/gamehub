@@ -17,6 +17,10 @@ form{
   z-index: 9999;
 } */
 
+.layout{
+  padding-bottom: 20px;
+}
+
 
 .fixed{
   position: fixed;
@@ -28,5 +32,5 @@ form{
   height: 100vh;
   overflow-y: auto;
   scroll-behavior:smooth;
-  scrollbar-width: none
+  scrollbar-width: none;
 }
