@@ -1,30 +1,48 @@
-# React + TypeScript + Vite
+# 🎮 GameHub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+GameHub is a modern game discovery web app built with **React**, **TypeScript**, and the [RAWG Video Game Database API](https://rawg.io/apidocs). It lets users explore top-rated, trending, and upcoming games, all wrapped in a clean, responsive UI.
 
-Currently, two official plugins are available:
+## 🛠️ Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ React + TypeScript
+- 🎨 Chakra UI
+- 🌐 Axios for API calls
+- 🗂️ RAWG.io Public API
 
-## Expanding the ESLint configuration
+## 🔍 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- ✅ Browse games by genre, platform, and rating
+- 🔍 Instant search functionality
+- 📱 Fully responsive design
+- 🔄 Error handling and loading spinners
 
-- Configure the top-level `parserOptions` property like this:
+## 📸 Screenshots
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+*(Add screenshots here if available, or use GitHub issue image links)*
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## 🚀 Live Demo
+
+[👉 View Demo](https://gamehub-alpha-jet.vercel.app/)
+
+## 🧪 Getting Started
+
+Clone the project:
+
+
+git clone https://github.com/yourusername/gamehub.git
+cd gamehub
+npm install
+npm run dev
+
+
+You’ll need to create a .env file and add your RAWG API key:
+
+VITE_RAWG_API_KEY=your_key_here
+
+
+
+🙌 Credits
+Game data from the RAWG API
+
+📜 License
+MIT
