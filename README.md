@@ -28,11 +28,13 @@ GameHub is a modern game discovery web app built with **React**, **TypeScript**,
 
 Clone the project:
 
-
+```bash
 git clone https://github.com/yourusername/gamehub.git
 cd gamehub
 npm install
 npm run dev
+
+```
 
 
 You’ll need to create a .env file and add your RAWG API key:
